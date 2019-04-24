@@ -1,0 +1,8 @@
+<?php
+include "header.php";
+include('xcrud/xcrud.php');
+$xcrud = Xcrud::get_instance();
+$xcrud->table('mps');
+echo $xcrud->render();
+include "footer.php";
+?>
